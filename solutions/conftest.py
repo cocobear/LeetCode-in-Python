@@ -10,7 +10,6 @@ def pytest_pycollect_makeitem(collector, name, obj):
             hasattr(obj, 'tests')):
         # can not be ismethod , don't know why
         func, _ = inspect.getmembers(obj, inspect.isfunction)[0]
-
         cases = obj.tests
         if not cases:
             return
