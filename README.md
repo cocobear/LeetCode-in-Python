@@ -1,5 +1,5 @@
 # LeetCode-in-Python
-[![LeetCode 排名](https://img.shields.io/badge/{{.Username}}-{{.Ranking}}-blue.svg)](https://leetcode.com/{{.Username}}/)
+[![LeetCode 排名](https://img.shields.io/badge/cocobear-10000-blue.svg)](https://leetcode.com/cocobear/)
  [![Python](https://img.shields.io/badge/python-3.7-blue.svg)](https://www.python.org/)
 
 LeetCode在线提交测试速度很慢，在做的的过程中发现调试很不方便，特别是有时候没注意到的`Syntax error`，要浪费很多时间，就打算把做过的题目全部可以本地化，希望能提高一些效率。
@@ -28,3 +28,10 @@ tests = [
 
 `pytest datastruct`
 
+
+
+## 进度
+
+ Easy	  		 2/372 (  0.54 %)  █░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+ Medium	    4/666 (  0.60 %)  █░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+ Hard	  		1/273 (  0.37 %)  █░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
