@@ -12,9 +12,10 @@ class ListNode:
                     return False
                 m = m.next
                 n = n.next
-        if m or n:
-            return False
-        return True
+            if m or n:
+                return False
+            return True
+        return False
 
     def __str__(self):
         n = self
