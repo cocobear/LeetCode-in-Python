@@ -27,10 +27,10 @@ class Solution:
             else:
                 cur.next = tmp
                 cur = cur.next
-        return a  
+        return a
 
     def addTwoNumbers(self, l1: ListNode, l2: ListNode) -> ListNode:
-        m = 0       
+        m = 0
         for tmp in [l1,l2]:
             i = 0
             while True:
@@ -44,11 +44,10 @@ class Solution:
         # print(m)
         # print(self.numToList(m))
         return self.numToList(m)
+
+# @lc code=end
     tests = [
             (makeListNode([2, 4, 3]), makeListNode([5, 6, 4]), makeListNode([7, 0, 8])),
             (makeListNode([8, 5, 3]), makeListNode([2, 4, 4]), makeListNode([0, 0, 8])),
 
             ]
-
-# @lc code=end
-
