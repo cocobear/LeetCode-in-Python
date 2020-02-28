@@ -3,7 +3,7 @@
 #
 # [100] Same Tree
 #
-from LeetCode_in_Python.datastruct.ListNode import TreeNode
+from LeetCode_in_Python.datastruct.TreeNode import TreeNode
 
 # @lc code=start
 # Definition for a binary tree node.
