@@ -2,8 +2,8 @@
 venv: venv/bin/activate
 venv/bin/activate: requirements.txt
 	test -d venv || virtualenv -p python3 --no-site-packages venv
-	venv/bin/pip install -Ur requirements.txt
-	touch venv/bin/activate
+	venv/bin/pip3 install -Ur requirements.txt
+	source venv/bin/activate
 
 test: venv
 	venv/bin/py.test  solutions
