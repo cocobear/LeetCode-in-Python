@@ -14,7 +14,7 @@ from LeetCode_in_Python.datastruct.ListNode import makeListNode
 #         self.next = None
 
 class Solution:
-    def mergeTwoLists(self, l1: ListNode, l2: ListNode) -> ListNode:
+    def mergeTwoListsFirst(self, l1: ListNode, l2: ListNode) -> ListNode:
         newList = ListNode(0)
         cur = newList
         cur1 = l1
@@ -42,7 +42,32 @@ class Solution:
             cur = cur.next
 
         return newList.next
-        
+
+    def mergeTwoLists(self, l1: ListNode, l2: ListNode) -> ListNode:
+        l3 = ListNode(0)
+        first = l1
+        second = l2
+        head = l3
+        cur = head
+        tmp_val = None
+        while first and second:
+            
+            if first.val < second.val:
+                tmp_val = first.val
+                first = first.next
+            else:
+                tmp_val = second.val
+                second = second.next
+            tmp = ListNode(tmp_val)
+            cur.next = tmp
+            cur = cur.next
+
+        # 两个链表如果长度不一样，则剩下一个
+        if first:
+            cur.next = first
+        if second:
+            cur.next = second
+        return head.next
 # @lc code=end
 
     tests = [
