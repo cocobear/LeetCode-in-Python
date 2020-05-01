@@ -28,7 +28,8 @@ tests = [
 
 `pytest datastruct`
 
-
+显示标准输出以及函数执行:
+`pytest 0001.py -vs`
 
 ## 进度
 
