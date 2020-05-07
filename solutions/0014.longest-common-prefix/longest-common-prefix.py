@@ -8,6 +8,14 @@ from __future__ import annotations
 # @lc code=start
 class Solution:
     def longestCommonPrefix(self, strs: List[str]) -> str:
+        ans = ''
+        for i in zip(*strs):
+            if len(set(i)) == 1:
+                ans += i[0]
+            else:
+                break
+        return ans
+    def longestCommonPrefix_1(self, strs: List[str]) -> str:
         prefix = ''
         i = 0
         j = 0
@@ -24,7 +32,7 @@ class Solution:
                 tmp = ''.join([x[i] for x in strs ])
             except IndexError:
                 break
-                
+
             if tmp.replace(tmp[0],'') == '':
                 i +=1
             else:
